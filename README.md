@@ -14,12 +14,12 @@ create database and edit value of database in .env file
 
 #
 
-> php artisan serve
-
-#
-
 > php artisan tinker
 #
-> User::factory()->count(7)->create()
+> factory(App\User::class, 7)->create()
 #
-> Tweet::::factory()->count(3)->create()
+> factory(App\Tweet::class, 5)->create()
+
+> php artisan serve
+
+now go to explore page in the sidebar and follow some people.
